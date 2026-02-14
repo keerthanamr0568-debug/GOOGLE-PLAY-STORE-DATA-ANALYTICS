@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Internship Tasks</title>
+    <title>Cyber Internship Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+            background: radial-gradient(circle at top, #0f0f1a, #000000);
+            color: #00f2ff;
+            overflow-x: hidden;
         }
 
         header {
             text-align: center;
             padding: 40px 20px;
-            font-size: 35px;
+            font-size: 38px;
             font-weight: bold;
-            letter-spacing: 2px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #00f2ff;
+            text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
         }
 
         .container {
@@ -27,25 +31,24 @@
         }
 
         .task {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00f2ff;
             border-radius: 20px;
             padding: 25px;
-            margin: 40px 0;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            margin: 50px 0;
+            box-shadow: 0 0 20px #00f2ff;
+            transition: 0.4s ease;
         }
 
         .task:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            box-shadow: 0 0 40px #00f2ff, 0 0 80px #0077ff;
+            transform: scale(1.02);
         }
 
         .task h2 {
-            margin-bottom: 15px;
-            border-left: 5px solid #00f2fe;
-            padding-left: 10px;
-            font-size: 22px;
+            color: #ff00ff;
+            text-shadow: 0 0 8px #ff00ff;
+            margin-bottom: 20px;
         }
 
         iframe {
@@ -58,9 +61,31 @@
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             font-size: 14px;
-            opacity: 0.8;
+            color: #888;
+        }
+
+        /* Animated background lines */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 50px,
+                rgba(0, 255, 255, 0.05) 50px,
+                rgba(0, 255, 255, 0.05) 52px
+            );
+            animation: move 10s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes move {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50px); }
         }
 
         @media (max-width: 768px) {
@@ -74,45 +99,45 @@
 <body>
 
 <header>
-    My Internship Project Portfolio
+    Internship Project – Neon Cyber Edition
 </header>
 
 <div class="container">
 
     <div class="task">
-        <h2>Task 1</h2>
+        <h2>⚡ Task 1</h2>
         <iframe src="task1.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 2</h2>
+        <h2>⚡ Task 2</h2>
         <iframe src="task2.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 3</h2>
+        <h2>⚡ Task 3</h2>
         <iframe src="task3.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 4</h2>
+        <h2>⚡ Task 4</h2>
         <iframe src="task4.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 5</h2>
+        <h2>⚡ Task 5</h2>
         <iframe src="task5.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 6</h2>
+        <h2>⚡ Task 6</h2>
         <iframe src="task6.html"></iframe>
     </div>
 
 </div>
 
 <footer>
-    © 2026 | Internship Project Submission
+    © 2026 | Cyber Internship Portfolio
 </footer>
 
 </body>
