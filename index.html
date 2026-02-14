@@ -1,87 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Internship Project</title>
+    <title>Internship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at top, #0f0f1a, #000000);
+            color: #00f2ff;
+            overflow-x: hidden;
         }
 
         header {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
-            color: white;
             text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-            opacity: 0.9;
+            padding: 40px 20px;
+            font-size: 38px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #00f2ff;
+            text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
         }
 
         .container {
-            width: 85%;
-            margin: 50px auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
         }
 
         .task {
-            background: white;
-            padding: 35px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: 0.3s;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00f2ff;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 50px 0;
+            box-shadow: 0 0 20px #00f2ff;
+            transition: 0.4s ease;
         }
 
         .task:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 0 40px #00f2ff, 0 0 80px #0077ff;
+            transform: scale(1.02);
         }
 
         .task h2 {
-            margin-top: 0;
-            font-size: 26px;
-            color: #1e3c72;
-        }
-
-        .task p {
-            font-size: 17px;
+            color: #ff00ff;
+            text-shadow: 0 0 8px #ff00ff;
             margin-bottom: 20px;
-            color: #555;
         }
 
-        .task a {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #1e3c72;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        .task a:hover {
-            background: #2a5298;
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            background: white;
         }
 
         footer {
             text-align: center;
             padding: 25px;
-            background: #1e3c72;
-            color: white;
-            margin-top: 50px;
-            font-size: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        /* Animated background lines */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 50px,
+                rgba(0, 255, 255, 0.05) 50px,
+                rgba(0, 255, 255, 0.05) 52px
+            );
+            animation: move 10s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes move {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50px); }
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 400px;
+            }
         }
     </style>
 </head>
@@ -89,54 +99,46 @@
 <body>
 
 <header>
-    <h1>Google Play Store Data Analytics</h1>
-    <p>Internship Project Portfolio</p>
+    Internship Project – Neon Cyber Edition
 </header>
 
 <div class="container">
 
     <div class="task">
-        <h2>Task 1: Data Cleaning</h2>
-        <p>Data preprocessing, missing value handling, and transformation.</p>
-        <a href="task1.html" target="_blank">View Output</a>
+        <h2>⚡ Task 1</h2>
+        <iframe src="task1.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 2: Exploratory Data Analysis</h2>
-        <p>Visual analysis of ratings, installs, and app categories.</p>
-        <a href="task2.html" target="_blank">View Output</a>
+        <h2>⚡ Task 2</h2>
+        <iframe src="task2.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 3: Category Analysis</h2>
-        <p>Category-wise performance comparison and trends.</p>
-        <a href="task3.html" target="_blank">View Output</a>
+        <h2>⚡ Task 3</h2>
+        <iframe src="task3.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 4: Sentiment Analysis</h2>
-        <p>User review sentiment classification and insights.</p>
-        <a href="task4.html" target="_blank">View Output</a>
+        <h2>⚡ Task 4</h2>
+        <iframe src="task4.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 5: Revenue & Pricing Analysis</h2>
-        <p>Analysis of paid vs free apps and revenue patterns.</p>
-        <a href="task5.html" target="_blank">View Output</a>
+        <h2>⚡ Task 5</h2>
+        <iframe src="task5.html"></iframe>
     </div>
 
     <div class="task">
-        <h2>Task 6: Final Insights & Visualization</h2>
-        <p>Comprehensive visual dashboard with key business insights.</p>
-        <a href="task6.html" target="_blank">View Output</a>
+        <h2>⚡ Task 6</h2>
+        <iframe src="task6.html"></iframe>
     </div>
 
 </div>
 
 <footer>
-    © 2026 | Internship Project
+    © 2026 | Internship-Tasks
 </footer>
 
 </body>
 </html>
-
