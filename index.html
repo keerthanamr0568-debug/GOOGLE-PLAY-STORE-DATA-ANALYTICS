@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Internship Project</title>
+    <title>Internship Project Portfolio</title>
 
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background: #0a0a0f;
-            font-family: 'Segoe UI', sans-serif;
-            color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
         }
 
-        /* HEADER */
         header {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
             padding: 60px 20px;
-            font-size: 60px;   /* BIG FONT */
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #00f2ff;
-            text-shadow: 0 0 20px #00f2ff, 
-                         0 0 40px #00f2ff,
-                         0 0 60px #00f2ff;
         }
 
-        /* TASK CONTAINER */
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
         .container {
             width: 85%;
-            margin: auto;
+            margin: 50px auto;
         }
 
         .task {
-            background: #111122;
-            padding: 40px;
-            margin: 40px 0;
-            border-radius: 20px;
-            box-shadow: 0 0 20px #00f2ff;
-            transition: 0.4s;
+            background: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
         .task:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 35px #ff00ff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .task h2 {
-            font-size: 34px;   /* BIGGER TASK TITLE */
-            color: #ff00ff;
-            text-shadow: 0 0 15px #ff00ff;
-            margin-bottom: 25px;
+            margin-top: 0;
+            font-size: 26px;
+            color: #1e3c72;
         }
 
-        /* BUTTON STYLE */
+        .task p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
         .task a {
             display: inline-block;
-            padding: 15px 35px;
-            font-size: 20px;
-            text-decoration: none;
+            padding: 12px 25px;
+            background: #1e3c72;
             color: white;
-            border: 2px solid #00f2ff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #00f2ff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
             transition: 0.3s;
         }
 
         .task a:hover {
-            background: #00f2ff;
-            color: black;
-            box-shadow: 0 0 25px #00f2ff;
+            background: #2a5298;
         }
 
         footer {
             text-align: center;
-            padding: 40px;
-            font-size: 20px;
-            color: #aaa;
+            padding: 25px;
+            background: #1e3c72;
+            color: white;
+            margin-top: 50px;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -84,47 +89,53 @@
 <body>
 
 <header>
-    My Internship Tasks
+    <h1>Google Play Store Data Analytics</h1>
+    <p>Internship Project Portfolio</p>
 </header>
 
 <div class="container">
 
     <div class="task">
-        <h2>Task 1</h2>
+        <h2>Task 1: Data Cleaning</h2>
+        <p>Data preprocessing, missing value handling, and transformation.</p>
         <a href="task1.html" target="_blank">View Output</a>
     </div>
 
     <div class="task">
-        <h2>Task 2</h2>
+        <h2>Task 2: Exploratory Data Analysis</h2>
+        <p>Visual analysis of ratings, installs, and app categories.</p>
         <a href="task2.html" target="_blank">View Output</a>
     </div>
 
     <div class="task">
-        <h2>Task 3</h2>
+        <h2>Task 3: Category Analysis</h2>
+        <p>Category-wise performance comparison and trends.</p>
         <a href="task3.html" target="_blank">View Output</a>
     </div>
 
     <div class="task">
-        <h2>Task 4</h2>
+        <h2>Task 4: Sentiment Analysis</h2>
+        <p>User review sentiment classification and insights.</p>
         <a href="task4.html" target="_blank">View Output</a>
     </div>
 
     <div class="task">
-        <h2>Task 5</h2>
+        <h2>Task 5: Revenue & Pricing Analysis</h2>
+        <p>Analysis of paid vs free apps and revenue patterns.</p>
         <a href="task5.html" target="_blank">View Output</a>
     </div>
 
     <div class="task">
-        <h2>Task 6</h2>
+        <h2>Task 6: Final Insights & Visualization</h2>
+        <p>Comprehensive visual dashboard with key business insights.</p>
         <a href="task6.html" target="_blank">View Output</a>
     </div>
 
 </div>
 
 <footer>
-     Internship Project
+    © 2026 | Internship Project
 </footer>
 
 </body>
 </html>
-
